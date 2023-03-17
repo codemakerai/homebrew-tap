@@ -10,7 +10,7 @@ Or `brew tap codemakerai/tap` and then `brew install codemaker-cli`.
 
 ### codemaker-cli
 
-Installs [CodeMaker CLI](https://github.com/codemakerai/codemaker-cli)on the local machine.
+Installs [CodeMaker CLI](https://github.com/codemakerai/codemaker-cli) on the local machine.
 
 ## Documentation
 
