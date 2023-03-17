@@ -1,11 +1,16 @@
 class CodemakerCli < Formula
     desc "CodeMaker CLI."
     homepage "https://github.com/codemakerai/codemaker-cli"
-    url "https://github.com/codemakerai/codemaker-cli/releases/download/v0.0.1/macos-amd64.zip"
-    sha256 "44807a64d8f955ea68b07f4ce0e67b2c6e45de89d194373a5ebd244bb009580c"
+    url "https://github.com/codemakerai/codemaker-cli.git",
+          tag:      "v0.0.1",
+          revision: "adf6713a4e1e01e47a337f410e22cf3ffb74eb5f"
+    head "https://github.com/codemakerai/codemaker-cli.git", branch: "dev"
     license "MIT"
+
+    depends_on "go" => :build
   
     def install
-      bin.install "bin/codemaker"
+      system "go", "build", *std_go_args(ldflags: "-s -w")
+      bin.install_symlink "codemaker-cli" => "codemaker"
     end
   end
