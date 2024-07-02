@@ -2,8 +2,8 @@ class CodemakerCli < Formula
   desc "Installs CodeMaker CLI"
   homepage "https://github.com/codemakerai/codemaker-cli"
   url "https://github.com/codemakerai/codemaker-cli.git",
-      tag:      "v1.5.0",
-      revision: "c5b43ce4e92f53718f09b8b29174cd970adc9c17"
+      tag:      "v1.6.0",
+      revision: "9775c17eadebb6ab1091dbee88fb2acff15d2840"
   license "MIT"
   head "https://github.com/codemakerai/codemaker-cli.git", branch: "dev"
 
